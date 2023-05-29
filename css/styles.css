@@ -198,6 +198,16 @@ h3,h2{
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
 }
+/*-----------------testimonios-----------------*/
+.container-fluid div img{
+    width: 50%;
+    padding: 5px;
+}
+.container-fluid h3{
+    color:#e3d9d1;
+    background-color: #7b504a;
+
+}
 /*-----------------media-queries index-----------------*/
 @media (max-width:350px) {
     .navbar-brand{
@@ -303,3 +313,4 @@ font-size: 50px;
 text-decoration: none;
 color: #444638;
 }
+
