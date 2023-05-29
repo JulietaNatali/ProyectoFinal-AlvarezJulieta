@@ -7,17 +7,19 @@
 }
 /*-----------------BODY-----------------*/
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Comfortaa', cursive;
     color: black;
-    background-image: url(../img/florfondo.jpg);
 }
 /*-----------------HEADER-----------------*/
-nav a img {
-    height: 100px;
-    width: 100px;
+.navbar{
+background-color: #cfb0ac70;
 }
-.navbar-brand{
-    font-size: 30px;
+.navbar .collapse.navbar-collapse{
+    flex-grow: inherit;
+}
+.navbar-nav a{
+    text-decoration: none;
+    color: #444638;
 }
 
 /*-----------------MAIN-----------------*/
@@ -34,7 +36,7 @@ main section p{
     justify-content: center;
 }
 
-.hero-text{
+.hero-box h1{
     background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
     font-size: 50px;
@@ -55,17 +57,12 @@ main section p{
     padding: 50px;
 }
 
-.atencion{
+.info-index{
     background-color:#7b504a ;
     border: solid;
     text-align: center;
     color: white;
     font-weight: lighter;
-}
-.atencion p{
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
 }
 
 h3,h2{
@@ -121,8 +118,9 @@ h3,h2{
 .contacto-form form button,
 .contacto-form form input,
 .contacto-form form textarea {
-    width: 100%;
-    padding: .7rem;
+    width: 97%;
+    padding: 5px;
+    margin: 5px;
     border: none;
     background: none;
     outline: 0;
@@ -158,10 +156,6 @@ h3,h2{
     list-style: none;
     padding: 0;
 }
-.info-contacto{
-    padding: 1rem;
-
-}
 /*-----------------Servicios-----------------*/
 .servicios h1{
     font-size: 50px;
@@ -193,11 +187,12 @@ h3,h2{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     gap: 15px;
-    object-fit: cover;
+
 }
 
 .grid-galeria div img{
     width: 100%;
+    object-fit: cover;
     height: 90%;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
@@ -209,8 +204,33 @@ h3,h2{
         font-size: 0px;
     }
 }
+@media (max-width: 820px) {
+    .galeria-imagenes{
+        flex-direction: column;
+        align-items: center;
+        object-fit: cover;
+    }
+    .galeria-imagenes img{
+        width: 60%;
+        height: 200%;
+        margin: 15px ;
+    }
+}
+@media (max-width: 597px){
+    .hero-box h1{
+        font-size: 35px;
+    }
+    main h3{
+        font-size: 22px;
+    }
+}
+@media (max-width: 493px){
+    .hero-box h1{
+        font-size: 25px;
+    }
+}
 /*-----------------media-queries form-----------------*/
-@media (min-width: 700px){
+@media (min-width: 1000px){
     body{
         padding: 0 4rem;
     }
@@ -228,12 +248,44 @@ h3,h2{
         text-align: left;
     }
 }
+@media (max-width: 905px) {
+    .content{
+        padding: 36px;
+    }
+}
+@media (max-width: 412px) {
+    .content{
+        padding: 17px;
+    }
+}
 /*-----------------media-queries servicios-----------------*/
 @media (max-width: 848px){
     .box-servicios{
         flex-direction: column;
     }
 }
+@media (max-width: 600px) {
+    .grid-galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        object-fit: cover;
+    }
+    .grid-galeria .grid-item{
+        width: 60%;
+        height: 200%;
+        margin: 15px ;
+    }
+
+}
+
+/*-----------------media-queries foot-----------------*/
+@media (max-width: 481px){
+    footer i {
+        font-size: 38px;
+    }
+}
+
 /*-----------------FOOT-----------------*/
 footer{
     background-color:  #d1c3be;
