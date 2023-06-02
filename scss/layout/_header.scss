@@ -1,0 +1,15 @@
+header{
+    .navbar{
+        background-color: $color-terciario;
+        .navbar-brand{
+            color: $color-secundario;
+        }
+        .collapse{
+            flex-grow: inherit;
+            .nav-link{
+                text-decoration: none;
+                color: $color-secundario;
+            }
+        }
+    }
+}
