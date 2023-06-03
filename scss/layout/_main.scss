@@ -5,13 +5,14 @@
     height: 400px;
     background-position: center;
     background-size: cover;
+    padding-top: 6rem;
     h1{
-        width: fit-content;
-        margin: 0 auto;
         background-color: rgba(255, 255, 255, 0.4);
         text-align: center;
         font-size: 50px;
         color: #444638;
+        width: fit-content;
+        margin: 0 auto;
     }
 }
 .flex-container{
@@ -165,12 +166,21 @@
 }
 //*TESTIMONIOS
 .container-fluid{
-    h3{
-        color:#e3d9d1;
-        background-color: #7b504a;
-    }
-    img{
-        width: 50%;
-        padding: 5px;
+    .row{
+        p{
+            display: inherit;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            font-size: 24px;
+        }
+        h3{
+            color:#e3d9d1;
+            background-color: #7b504a;
+        }
+        img{
+            width: 50%;
+            padding: 5px;
+        }
     }
 }
