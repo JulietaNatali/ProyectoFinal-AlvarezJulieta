@@ -184,3 +184,22 @@
         }
     }
 }
+//*NOSOTROS
+h1{
+    margin: 5px ;
+}
+.conteiner-nosotros{
+    h2{
+        font-style: italic;
+    }
+    p{
+        color: $color-secundario;
+    }
+}
+.galeria-nosotros{
+    img{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+}
