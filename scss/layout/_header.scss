@@ -4,11 +4,14 @@ header{
         .container-fluid{
             max-width: 1400px;
             margin: 0 auto;
+            .navbar-brand{
+                color: $color-secundario;
+            }
             .collapse{
                 flex-grow: inherit;
                 .nav-link{
                     text-decoration: none;
-                    color: $color-secundario;
+                    color: white;
                 }
             }
         }

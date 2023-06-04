@@ -99,3 +99,11 @@
         font-size: 38px;
     }
 }
+//Mediaquerys nosotros
+@media (max-width: 700px){
+    .galeria-nosotros{
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+}

@@ -10,7 +10,7 @@
         background-color: rgba(255, 255, 255, 0.4);
         text-align: center;
         font-size: 50px;
-        color: #444638;
+        color: #000000;
         width: fit-content;
         margin: 0 auto;
     }
@@ -24,6 +24,7 @@
     p{
         display: flex;
         justify-content: center;
+        color: white;
     }
     .galeria-imagenes{
         display: flex;
@@ -41,6 +42,9 @@
     }
     .informacion{
         justify-content: center;
+        p{
+            color: #000000;
+        }
         h2{
             font-size: 33px;
             padding:0 ;
@@ -70,7 +74,7 @@
         text-align: center;
         font-size: 3em;
         span{
-            color: #b85a4e;
+            color: white;
         }
     }
         .contacto-form{
@@ -113,10 +117,12 @@
             h3, ul ,p{
                 text-align: center;
                 margin: 0 0 1 rem 0;
+                color: white;
             }
             ul{
                 list-style: none;
                 padding: 0;
+                color: white;
             }
         }
 
@@ -125,11 +131,11 @@
 .servicios{
     h1{
         font-size: 50px;
-        color: #444638;
+        color: white;
     }
     h2{
         font-size: 25 px;
-        color: #444638;
+        color: white;
     }
 }
 .box-servicios{
@@ -137,14 +143,17 @@
     flex-direction: row;
     justify-content: space-around;
     .item-flex{
-        color: #a14b23;
+        color: white;
         margin: 10px;
         flex: auto;
-        border: 3px solid #d58a3175;
         padding: 10px;
+        box-shadow: 1px 25px 51px -3px rgba(123,80,74,0.69);
+-webkit-box-shadow: 1px 25px 51px -3px rgba(123,80,74,0.69);
+-moz-box-shadow: 1px 25px 51px -3px rgba(123,80,74,0.69);
         h3{
             text-align: center;
             margin: 0 0 10px;
+            font-style: italic ;
         }
     }
 
@@ -165,6 +174,9 @@
     }
 }
 //*TESTIMONIOS
+h1, h2{
+    color: white;
+}
 .container-fluid{
     .row{
         p{
@@ -173,6 +185,7 @@
             max-width: 1000px;
             margin: 0 auto;
             font-size: 24px;
+            color: black;
         }
         h3{
             color:#e3d9d1;
@@ -187,19 +200,29 @@
 //*NOSOTROS
 h1{
     margin: 5px ;
+    color: white;
 }
 .conteiner-nosotros{
+    margin: 5px;
     h2{
         font-style: italic;
+        color: white;
     }
     p{
-        color: $color-secundario;
+        color: $color-terciario;
+        max-width: 1400px;
+        margin: 0 auto;
+        color: white;
     }
 }
 .galeria-nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     img{
-        display: flex;
-        justify-content: center;
-        width: 50%;
+        width: 37%;
+        height: auto;
+        object-fit: cover;
+        margin: 10px;
     }
 }
