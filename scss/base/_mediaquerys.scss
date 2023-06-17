@@ -8,12 +8,15 @@
 
 @media (max-width: 820px) {
     .flex-container{
+        p{
+            font-size: 18px;
+        }
         .galeria-imagenes{
             flex-direction: column;
             align-items: center;
             object-fit: cover;
             img{
-                width: 50%;
+                width: 65%;
                 height: 200%;
                 margin: 15px ;
             }
@@ -32,7 +35,7 @@
         }
     }
     }
-
+//*Mediaquerys CONTACTO
 @media (min-width: 1000px){
     body{
         padding: 0 4rem;
@@ -40,20 +43,23 @@
             display: grid;
             grid-template-columns: 2fr 1fr;
             padding: 2em;
-            .info-contacto h3, UL, P{
+            .info-contacto{
+                h3, ul, p{
                     padding: 1em;
                     text-align: left;
-                
+                }
             }
         }
     }
 }
+
 @media (max-width: 412px) {
     .content{
         padding: 17px;
     }
 }
 //*Mediaquerys SERVICIOS
+
 @media (max-width: 848px){
     .box-servicios{
         flex-direction: column;
@@ -79,6 +85,7 @@
         .row{
             p{
                 font-size: 13px;
+                margin: 30px;
             }
         }
     }
@@ -89,6 +96,9 @@
         .row{
             p{
                 font-size: 16px;
+            }
+            img{
+                width: 45%;
             }
         }
     }
@@ -104,6 +114,9 @@
     .galeria-nosotros{
         flex-direction: column;
         align-items: center;
+        img{
+            width: 78%;
+        }
     } 
     
 }
